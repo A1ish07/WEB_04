@@ -50,9 +50,9 @@
       <div class="row">
         <div class="col-md-6 mb-3">
           <label for="password" class="form-label">Password</label>
-          <input type="password" class="form-control" id="password" name="password" required minlength="8">
+          <input type="password" class="form-control" id="password" name="password" required minlength="8" pattern="(?=.*\d)(?=.*[A-Za-z]).{8,}">
           <div class="valid-feedback">Looks good!</div>
-          <div class="invalid-feedback">Password must be at least 8 characters.</div>
+          <div class="invalid-feedback">At least 8 characters, with a letter and a digit.</div>
         </div>
         <div class="col-md-6 mb-3">
           <label for="confirmPassword" class="form-label">Confirm Password</label>
